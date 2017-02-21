@@ -1,10 +1,4 @@
 import numpy as np
-#import pandas as pd
-#import scipy as sp
-#import scipy.stats
-
-#import matplotlib as mpl
-#import matplotlib.pyplot as plt
 
 def simulatedat(numsamples=5,numdiff=100,numc=100,numd=800,sigma=0.1,normalize=False, numreads=10000):
 	"""

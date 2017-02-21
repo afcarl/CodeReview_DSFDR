@@ -8,7 +8,6 @@ from scipy.special import comb
 import transform
 import statistics
 
-# new fdr method
 def dsfdr(data,labels, transformtype='rankdata', method='meandiff', alpha=0.1, numperm=1000,fdrmethod='dsfdr'):
 	'''
 	calculate the Discrete FDR for the data

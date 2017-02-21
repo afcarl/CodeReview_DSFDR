@@ -5,10 +5,6 @@ import numpy.testing as npt
 
 import transform
 
-# source activate python3
-# cd dfdr
-#run nosetests in shell
-
 
 class TransformTests(TestCase):
     def setUp(self):
