@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 
 # data transformation
 def rankdata(data):
-	rdata=np.zeros(np.shape(data))
+	rdata = np.zeros(np.shape(data))
 	for crow in range(np.shape(data)[0]):
-		rdata[crow,:]=sp.stats.rankdata(data[crow,:])
+		rdata[crow,:] = sp.stats.rankdata(data[crow,:])
 	return rdata
 
 def log2data(data):
@@ -23,6 +23,6 @@ def binarydata(data):
 	return data
 
 def normdata(data):
-	data = data / np.sum(data, axis = 0)
+	data = data / np.sum(data, axis=0)
 	return data	
 	
