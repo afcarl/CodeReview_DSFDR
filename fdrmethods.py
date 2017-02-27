@@ -233,4 +233,7 @@ def dsfdr(data,labels, transformtype='rankdata', method='meandiff', alpha=0.1, n
 		pvals = (np.sum(u >= t_star,axis = 1) + 1) / (numperm + 1)
 		reject = statsmodels.sandbox.stats.multicomp.multipletests(pvals, alpha=alpha, method='fdr_by')[0]
 
+	else:
+		raise ValueError('fdr method %s not supported' % fdrmethod)
+
 	return reject, tstat, pvals
