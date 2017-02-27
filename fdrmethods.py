@@ -89,7 +89,7 @@ def dsfdr(data,labels, transformtype='rankdata', method='meandiff', alpha=0.1, n
 	elif transformtype is None:
 		pass
 	else:
-        raise ValueError ('transform type %s not supported' % transformtype)	
+		raise ValueError ('transform type %s not supported' % transformtype)	
 
 	numbact = np.shape(data)[0]
 	labels = labels.copy()
